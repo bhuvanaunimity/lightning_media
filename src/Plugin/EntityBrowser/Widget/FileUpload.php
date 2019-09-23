@@ -60,7 +60,6 @@ class FileUpload extends EntityFormProxy {
       '#process' => [
         [$this, 'processUploadElement'],
       ],
-      '#upload_location' => 'public://'.date('Y').'-'.date('m').'/',
       '#upload_validators' => $this->getUploadValidators(),
       '#weight' => 70,
     ];

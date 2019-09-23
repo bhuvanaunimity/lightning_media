@@ -20,7 +20,7 @@ class Upload extends FileElement {
   public function getInfo() {
     $info = parent::getInfo();
     $info['#required'] = FALSE;
-    $info['#upload_location'] = 'public://'.date('Y').'-'.date('m').'/';
+    $info['#upload_location'] = 'public://';
     $info['#upload_validators'] = [];
     $info['#element_validate'] = [
       [static::class, 'validate'],
